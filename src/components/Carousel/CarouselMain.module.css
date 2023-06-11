@@ -1,0 +1,39 @@
+.main{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carousel{
+    overflow: hidden;
+    max-height: 50vh;
+    width: 100%;
+}
+
+
+.cardCarusel {
+    display: block;
+    margin: auto;
+    position: absolute;
+    max-width: 29rem;
+}
+.card{
+    padding: 16px 38px;
+}
+
+@media (max-width: 425px){
+    .carousel{
+        display: none;
+    }
+    .cardCarusel {
+        display: block;
+        position: static;
+        max-width: 100%;
+    }
+    .card{
+        padding: 9px 18px;
+    }
+}
+

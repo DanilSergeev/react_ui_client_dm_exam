@@ -1,0 +1,55 @@
+.line {
+    height: 280px;
+    background: url(../../assets/img/line.jpg);
+    border-bottom: 8px solid var(--colorSecond);
+    overflow: hidden;
+    position: relative;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1;
+}
+
+.line:hover::before {
+    opacity: 1;
+}
+
+
+.lineWrapper {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+.lineWrapper h1{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.lineWrapper p{
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 28px;
+    width: 30%;
+}
+
+@media (max-width: 425px){
+    .lineWrapper h1{
+        font-size: 28px;
+    }
+    .lineWrapper p{
+        font-size: 14px;
+    }
+}

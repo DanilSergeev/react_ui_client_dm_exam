@@ -19,10 +19,8 @@ const Header = () => {
                         </Nav>
 
                         <Nav>
-                            <Nav.Link href="#deets">More deets</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
-                                Dank memes
-                            </Nav.Link>
+                            <Nav.Link as={NavLink} to="/auth">Авторизация</Nav.Link>
+                            <Nav.Link as={NavLink} to="/register">Регистрация</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
