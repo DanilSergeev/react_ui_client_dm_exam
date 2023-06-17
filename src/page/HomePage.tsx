@@ -5,13 +5,15 @@ import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
 
+
 const HomePage = () => {
 
     return (
         <main>
-            <Line title="Главная страница" text="dawdawd" />
             <CarouselMain arrUrl={[
-                'https://img1.akspic.ru/attachments/crops/5/3/3/4/0/104335/104335-gornyj_relef-stena-gornaya_derevnya-derevo-gora-1920x1080.jpg',
+                'https://bogatyr.club/uploads/posts/2023-03/1678108308_bogatyr-club-p-muzikalnaya-studiya-foni-krasivo-31.jpg',
+                'https://i.artfile.ru/1920x1080_1346699_[www.ArtFile.ru].jpg',
+                'https://million-wallpapers.ru/wallpapers/4/47/17943295428896130785/sv-tlovolosa-skripalka-vikonu-melod-yu.jpg'
             ]}>
                 <Card.Body>
                     <Card.Title>Квалифицированная помощь онлайн</Card.Title>

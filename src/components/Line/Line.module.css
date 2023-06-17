@@ -1,6 +1,6 @@
 .line {
     height: 280px;
-    background: url(../../assets/img/line.jpg);
+    background: url('../../assets/img/line.jpg');
     border-bottom: 8px solid var(--colorSecond);
     overflow: hidden;
     position: relative;

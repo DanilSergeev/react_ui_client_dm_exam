@@ -18,6 +18,7 @@ body,#root{
 }
 .wrapper{
     max-width: 1100px;
+    margin: 0 auto;
 }
 main{
     min-height: 70vh;
@@ -57,9 +58,23 @@ footer p{
     width: 100%;
 }
 
+.authCard{
+    padding: 20px;
+}
 
+.authCardLinkLogo{
+    height: 2vh;
+    margin: 0 auto auto auto;
+}
+.display-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.authSection > div, .authSection > form  {
+    width: 45%;
 
-
+}
 
 
 @media (max-width: 425px){

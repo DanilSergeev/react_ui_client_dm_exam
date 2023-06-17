@@ -3,8 +3,24 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, NavLink } from 'react-router-dom';
 import logo from "../assets/img/logo.png"
+import AuthService from '../services/authService';
+import { useDispatch, useSelector } from "react-redux"
+import { logoutAction } from '../store/auth-reduser';
+
 
 const Header = () => {
+    const dispatch = useDispatch()
+    const authReduser: any = useSelector<any>(state => state.authReduser);
+
+    const logoutFun = async () => {
+        try {
+            const response = await AuthService.logout()
+            dispatch(logoutAction(response))
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
 
     return (
         <header>
@@ -14,13 +30,21 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link as={NavLink} to="/aboutUs">Features</Nav.Link>
-                            <Nav.Link as={NavLink} to="/aboutUs">Pricing</Nav.Link>
+                            <Nav.Link as={NavLink} to="/aboutus">О нас</Nav.Link>
+                            <Nav.Link as={NavLink} to="/catalog">Каталог</Nav.Link>
+                            <Nav.Link as={NavLink} to="/where_are_we">Где нас найти?</Nav.Link>
                         </Nav>
 
                         <Nav>
-                            <Nav.Link as={NavLink} to="/auth">Авторизация</Nav.Link>
-                            <Nav.Link as={NavLink} to="/register">Регистрация</Nav.Link>
+                            {
+                                authReduser.isAuth ?
+                                    <Nav.Link onClick={() => logoutFun()} href="#">Выйти с {authReduser.email.substr(0, 12)}</Nav.Link>
+                                    :
+                                    <>
+                                        <Nav.Link as={NavLink} to="/auth">Авторизация</Nav.Link>
+                                        <Nav.Link as={NavLink} to="/register">Регистрация</Nav.Link>
+                                    </>
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
