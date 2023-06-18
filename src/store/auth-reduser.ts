@@ -52,13 +52,14 @@ export const authReduser = (state = defaultState, action: any) => {
         case CHECK_AUTH:
             try {
                 localStorage.setItem("token", action.payload.data.tokens.accessToken)
+                
                 return {
                     ...state,
-                    id: action.payload.user.id,
-                    email: action.payload.user.email,
-                    role: action.payload.user.role,
-                    name: action.payload.user.name,
-                    surname: action.payload.user.surname,
+                    id: action.payload.data.userDto.id,
+                    email: action.payload.data.userDto.email,
+                    role: action.payload.data.userDto.role,
+                    name: action.payload.data.userDto.name,
+                    surname: action.payload.data.userDto.surname,
                     isAuth: action.payload.isAuth,
 
                 }

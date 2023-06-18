@@ -13,6 +13,10 @@ import { checkAuthAction } from "./store/auth-reduser"
 import AboutUsPage from './page/AboutUsPage';
 import CatalogPage from './page/CatalogPage';
 import WhereAreWePage from './page/WhereAreWePage';
+import AdminPage from './page/AdminPage';
+import UpdataProducts from './page/UpdataProducts';
+import CreateProductsPage from './page/CreateProductsPage';
+import ProductCheck from './page/ProductCheck';
 
 
 
@@ -52,6 +56,10 @@ function App() {
         <Route path="/aboutus" element={<AboutUsPage />} />
         <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/where_are_we" element={<WhereAreWePage />} />
+        <Route path="/admin" element={<AdminPage />} />
+        <Route path="/product/:id" element={<ProductCheck />} />
+        <Route path="/updata_products/:id" element={<UpdataProducts />} />
+        <Route path="/create_products/" element={<CreateProductsPage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

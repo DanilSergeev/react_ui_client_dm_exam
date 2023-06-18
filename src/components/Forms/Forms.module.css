@@ -1,0 +1,46 @@
+.mainForm {}
+
+.mainForm ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainForm h2 {
+    text-align: center;
+}
+
+.listFormAllOrder div div:nth-child(1) {
+    font-size: 12px;
+    color: #565656;
+    margin-bottom: 1rem;
+}
+
+
+
+.listFormAllOrder div div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listFormAllOrder div p {
+    font-size: 18px;
+}
+
+.filter {
+    display: flex;
+    align-items: flex-start
+}
+
+.filter select {
+    margin-left: 2rem;
+}
+.listFormProduct div{
+    text-align: right;
+}
+.listFormProduct img {
+    max-height: 170px;
+}
+.img{
+    max-height: 200px;
+}

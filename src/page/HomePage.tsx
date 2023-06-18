@@ -16,12 +16,12 @@ const HomePage = () => {
                 'https://million-wallpapers.ru/wallpapers/4/47/17943295428896130785/sv-tlovolosa-skripalka-vikonu-melod-yu.jpg'
             ]}>
                 <Card.Body>
-                    <Card.Title>Квалифицированная помощь онлайн</Card.Title>
+                    <Card.Title>dddd</Card.Title>
                     <Card.Text>
-                        Добро пожаловать в нашу компанию, которая предоставляет медицинские консультации с помощью видеосвязи. Мы стремимся сделать медицинскую помощь максимально доступной и удобной для каждого пациента.
+                        ffff
                     </Card.Text>
-                    <Link to="/videoRooms">
-                        <Button variant="danger">К комноте</Button>
+                    <Link to="/auth">
+                        <Button variant="danger">Войти</Button>
                     </Link>
                 </Card.Body>
             </CarouselMain>

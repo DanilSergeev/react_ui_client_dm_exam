@@ -23,6 +23,7 @@
     padding: 16px 38px;
 }
 
+
 @media (max-width: 425px){
     .carousel{
         display: none;

@@ -75,6 +75,20 @@ footer p{
     width: 45%;
 
 }
+.ml-2{
+    margin-left: 2rem;
+}
+.disFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ProductCheck img{
+    width: 40%;
+}
+.ProductCheck div{
+    width: 50%;
+}
 
 
 @media (max-width: 425px){
