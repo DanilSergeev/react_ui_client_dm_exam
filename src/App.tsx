@@ -17,6 +17,7 @@ import AdminPage from './page/AdminPage';
 import UpdataProducts from './page/UpdataProducts';
 import CreateProductsPage from './page/CreateProductsPage';
 import ProductCheck from './page/ProductCheck';
+import BasketPage from './page/BasketPage';
 
 
 
@@ -60,6 +61,9 @@ function App() {
         <Route path="/product/:id" element={<ProductCheck />} />
         <Route path="/updata_products/:id" element={<UpdataProducts />} />
         <Route path="/create_products/" element={<CreateProductsPage />} />
+        <Route path="/basket/:id" element={<BasketPage />} />
+
+        
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

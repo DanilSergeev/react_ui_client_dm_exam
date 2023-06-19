@@ -55,6 +55,8 @@ const CarouselAbout = () => {
     return (
         <div className={classes.main}>
 
+
+
             <Carousel className={classes.carousel} interval={6000} touch={false}>
                 {
                     products.map((item, index) => (

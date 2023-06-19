@@ -44,7 +44,7 @@ const Header = () => {
                                             authReduser.role === "ADMIN" ?
                                                 <Nav.Link as={NavLink} to="/admin">Админка</Nav.Link>
                                                 :
-                                                <Nav.Link onClick={() => console.log(123)} href="#">Карзина</Nav.Link>
+                                                <Nav.Link as={NavLink} to={`/basket/${authReduser.id}`}>Корзина</Nav.Link>
                                         }
                                         <Nav.Link onClick={() => logoutFun()} href="#">Выйти с {authReduser.email.substr(0, 12)}</Nav.Link>
                                     </>
